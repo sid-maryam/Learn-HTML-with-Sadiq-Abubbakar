@@ -1,0 +1,327 @@
+<!--
+To launch your website:
+1. Make sure all images and files referenced in the code are present in the correct folders.
+2. Open this file (basic_website.html) in your browser by double-clicking it or dragging it into the browser window.
+3. For advanced features (like fetch/API), run a local server:
+   - Open a terminal in this folder and run: python -m http.server 8000
+   - Then open http://localhost:8000/basic_website.html in your browser.
+4. For deployment, upload all files to your web host or use GitHub Pages/Netlify.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frere Town Coding | Learn HTML & Web Design</title>
+	<link rel="stylesheet" href="basic_website.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	   <header>
+		   <nav class="navbar">
+			   <ul>
+				   <li><a href="#home">Home</a></li>
+				   <li><a href="#about">About</a></li>
+				   <li><a href="#howto">How to do HTML code</a></li>
+				   <li><a href="#contact">Contact Us</a></li>
+			   </ul>
+		   </nav>
+		   <h1> Learn to Code using HTML with Saddiq Abubakar Ali</h1>
+	   </header>
+	   <main>
+		   <section id="home">
+			   <div class="floating-box">
+				   <h2>Home</h2>
+				   <p>Welcome to our website! Explore coding resources and tutorials designed for beginners and young scientists.</p>
+			   </div>
+		   </section>
+		   <section id="about">
+			   <div class="floating-box">
+				   <h2>About</h2>
+				   <p>This is a simple HTML website where you can learn how to code.</p>
+			   </div>
+		   </section>
+		   <section id="projects">
+               <div class="floating-box">
+                   <h2>Projects</h2>
+                   <div class="project-gallery">
+                       <div class="project-item">
+                           <img src="images/attached-image.jpg" alt="Personal Portfolio Website" width="220" />
+                           <h3>Personal Portfolio Website</h3>
+                           <p>A modern, responsive portfolio site built with HTML, CSS, and JavaScript. Features a gallery, contact form, and smooth navigation.</p>
+                           <a href="https://your-portfolio-link.com" target="_blank" rel="noopener" class="project-link">View Project</a>
+                       </div>
+                       <div class="project-item">
+                           <img src="images/attached-image.jpg" alt="Simple Blog Platform" width="220" />
+                           <h3>Simple Blog Platform</h3>
+                           <p>A clean blog site built with HTML, CSS, and a touch of JavaScript. Supports multiple posts and categories.</p>
+                           <a href="https://your-blog-link.com" target="_blank" rel="noopener" class="project-link">View Project</a>
+                       </div>
+                       <div class="project-item">
+                           <img src="images/attached-image.jpg" alt="Photo Gallery" width="220" />
+                           <h3>Photo Gallery</h3>
+                           <p>A responsive image gallery with lightbox effect, built using only HTML and CSS. Great for portfolios and events.</p>
+                           <div class="gallery-images" style="display:flex;gap:1rem;justify-content:center;margin:1em 0;flex-wrap:wrap;">
+                             <img src="image-1758812839898.png" alt="Gallery Image 1" style="width:100px;height:auto;border-radius:8px;box-shadow:0 2px 8px #0002;" />
+                             <img src="image-1758817341413.png" alt="Gallery Image 2" style="width:100px;height:auto;border-radius:8px;box-shadow:0 2px 8px #0002;" />
+                           </div>
+                           <a href="https://your-gallery-link.com" target="_blank" rel="noopener" class="project-link">View Project</a>
+                       </div>
+                   </div>
+               </div>
+           </section>
+		   <section id="howto">
+              <div class="floating-box">
+                  <h2>How to do HTML code</h2>
+                  <p><strong>What you need</strong></p>
+                  <ul>
+                      <li>A plain-text editor (VS Code, Sublime Text, Notepad++, or even Notepad).</li>
+                      <li>A modern browser (Chrome, Firefox, Edge, Safari) to open and test the page.</li>
+                      <li>A folder on your computer to keep the files (e.g., <code>my-site/</code>).</li>
+                  </ul>
+                  <p><strong>1 — Create the HTML file</strong></p>
+                  <ol>
+                      <li>Open your editor.</li>
+                      <li>Create a new file and save it as <code>index.html</code> inside your folder.</li>
+                      <li>Paste this minimal HTML skeleton:</li>
+                  </ol>
+                  <pre class="vscode-code"><code>&lt;!DOCTYPE html&gt;
+	&lt;html lang="en"&gt;
+	&lt;head&gt;
+	    &lt;meta charset="UTF-8"&gt;
+	    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+	    &lt;title&gt;My First Page&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;</code></pre>
+                  <p>Here is a full example:</p>
+                  <pre class="vscode-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css" /&gt; &lt;!-- optional --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Welcome to my page&lt;/h1&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;p&gt;Hello — this is my first HTML page.&lt;/p&gt;
+    &lt;a href="https://example.com" target="_blank" rel="noopener"&gt;Visit example.com&lt;/a&gt;
+    &lt;img src="photo.jpg" alt="Description of photo" /&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;small&gt;© 2025 Your Name&lt;/small&gt;
+  &lt;/footer&gt;
+
+  &lt;script src="script.js"&gt;&lt;/script&gt; &lt;!-- optional --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                  <p><strong>2 — What each part means (quick)</strong></p>
+                  <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> — tells the browser this is HTML5.</li>
+                    <li><code>&lt;html lang="en"&gt;</code> — root element; <code>lang</code> helps accessibility and search engines.</li>
+                    <li><code>&lt;head&gt;</code> — meta information (title, encoding, CSS links).</li>
+                    <li><code>&lt;meta charset="utf-8"&gt;</code> — sets text encoding (use always).</li>
+                    <li><code>&lt;meta name="viewport"...&gt;</code> — makes the page responsive on mobile.</li>
+                    <li><code>&lt;title&gt;</code> — text shown in the browser tab.</li>
+                    <li><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> — links an external CSS file.</li>
+                    <li><code>&lt;body&gt;</code> — visible page content (headings, paragraphs, images...).</li>
+                    <li><code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> — semantic elements that describe page structure.</li>
+                    <li><code>&lt;script src="script.js"&gt;</code> — loads JavaScript (optional).</li>
+                  </ul>
+                  <p><strong>3 — Add basic content (examples)</strong></p>
+                  <p>Headings and text:</p>
+                  <pre class="vscode-code"><code>&lt;h1&gt;Main heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+                  <p>Lists:</p>
+                  <pre class="vscode-code"><code>&lt;ul&gt;
+  &lt;li&gt;Item A&lt;/li&gt;
+  &lt;li&gt;Item B&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                  <p>Image:</p>
+                  <pre class="vscode-code"><code>&lt;img src="images/photo.jpg" alt="a clear description" width="600" /&gt;</code></pre>
+                  <p>Link:</p>
+                  <pre class="vscode-code"><code>&lt;a href="about.html"&gt;About page (internal)&lt;/a&gt;
+&lt;a href="https://example.com" target="_blank" rel="noopener"&gt;External site&lt;/a&gt;</code></pre>
+                  <p>Form (basic):</p>
+                  <pre class="vscode-code"><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name&lt;/label&gt;
+  &lt;input id="name" name="name" type="text" required /&gt;
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                  <p><strong>4 — Add styling with CSS</strong></p>
+                  <p>Create <code>styles.css</code> in the same folder and add:</p>
+                  <pre class="vscode-code"><code>/* styles.css */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
+header { background: #f2f2f2; padding: 1rem; }
+main { padding: 1rem; }
+img { max-width: 100%; height: auto; display: block; }
+</code></pre>
+                  <p>The <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> in your HTML will load this file.</p>
+                  <p><strong>5 — Add interactivity with JavaScript</strong></p>
+                  <p>Create <code>script.js</code>:</p>
+                  <pre class="vscode-code"><code>// script.js
+document.addEventListener('DOMContentLoaded', function () {
+  const h1 = document.querySelector('h1');
+  if (h1) h1.addEventListener('click', () => alert('You clicked the heading!'));
+});
+</code></pre>
+                  <p>This runs after the page loads and shows a simple click behavior.</p>
+                  <p><strong>6 — View and test locally</strong></p>
+                  <ul>
+                    <li>Double-click <code>index.html</code> or drag it into your browser to open it.</li>
+                    <li>Use Developer Tools (F12) → Console / Elements to debug layout, inspect elements, and see JS errors.</li>
+                    <li>For features that require a server (fetch, APIs), run a local server: e.g., in terminal inside the folder <code>python -m http.server 8000</code> (then open <a href="http://localhost:8000" target="_blank" rel="noopener">http://localhost:8000</a>).</li>
+                  </ul>
+                  <p><strong>7 — Accessibility &amp; best practices</strong></p>
+                  <ul>
+                    <li>Always provide <strong>alt text</strong> for images.</li>
+                    <li>Use semantic tags (<code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>) — they help screen readers and SEO.</li>
+                    <li>Ensure form inputs have <code>&lt;label&gt;</code>s.</li>
+                    <li>Keep heading order logical: <code>&lt;h1&gt;</code> → <code>&lt;h2&gt;</code> → <code>&lt;h3&gt;</code>.</li>
+                    <li>Use <code>rel="noopener noreferrer"</code> when opening external links in new tabs (<code>target="_blank"</code>).</li>
+                    <li>Add <code>lang</code> attribute to <code>&lt;html&gt;</code> and proper <code>meta charset</code>.</li>
+                    <li>Make text readable (contrast, font-size) and mobile-friendly (meta viewport + responsive CSS).</li>
+                  </ul>
+                  <p><strong>8 — Validation, performance and security</strong></p>
+                  <ul>
+                    <li>Validate HTML/CSS with a validator (search “HTML validator” / “WCAG checklist”).</li>
+                    <li>Optimize images (resize, compress) to reduce load time.</li>
+                    <li>Serve files over HTTPS when publishing.</li>
+                    <li>Avoid inline JS for security reasons (CSP considerations) in larger projects.</li>
+                  </ul>
+                  <p><strong>9 — Folder structure suggestion</strong></p>
+                  <pre class="vscode-code"><code>my-site/
+  index.html
+  about.html
+  css/
+    styles.css
+  js/
+    script.js
+  images/
+    photo.jpg
+</code></pre>
+                  <p><strong>10 — Deploy (quick options)</strong></p>
+                  <ul>
+                    <li>Upload to a web host or use free hosting: <strong>GitHub Pages</strong>, <strong>Netlify</strong>, <strong>Vercel</strong> (search these names).</li>
+                    <li>For GitHub Pages: push the repo and enable Pages in the repo settings (works well for static sites).</li>
+                  </ul>
+                  <p><strong>Cheatsheet — common HTML tags</strong></p>
+                  <pre class="vscode-code"><code>&lt;!DOCTYPE html&gt; — start document
+&lt;html&gt; — root
+&lt;head&gt; — meta + title + links
+&lt;body&gt; — visible content
+&lt;h1&gt;…&lt;h6&gt; — headings
+&lt;p&gt; — paragraph
+&lt;a href=""&gt; — link
+&lt;img src="" alt=""&gt; — image
+&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; — lists
+&lt;form&gt;, &lt;input&gt;, &lt;button&gt;, &lt;label&gt; — forms
+&lt;div&gt; — generic container
+&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt; — semantic layout
+</code></pre>
+                  <p><strong>Quick exercises (next steps)</strong></p>
+                  <ul>
+                    <li>Make a simple personal homepage with a photo and contact form.</li>
+                    <li>Add a navigation bar linking to About / Projects / Contact pages.</li>
+                    <li>Make the layout responsive — try CSS Flexbox or Grid.</li>
+                    <li>Publish it using GitHub Pages or Netlify.</li>
+                  </ul>
+		   </section>
+		   <section id="contact">
+			   <div class="floating-box">
+				   <h2>Contact Us</h2>
+				   <p>Have questions or want to reach out? Email us at <a href="mailto:sadiq14526@gmail.com">sadiq14526@gmail.com</a> or use the form below:</p>
+				   <form aria-label="Contact form">
+					   <label for="name">Name:</label><br>
+					   <input type="text" id="name" name="name" value="Name" required><br><br>
+					   <label for="email">Email:</label><br>
+					   <input type="email" id="email" name="email" value="Email" required><br><br>
+					   <label for="message">Message:</label><br>
+					   <textarea id="message" name="message" rows="4" required>Message</textarea><br><br>
+					   <button type="submit">Send</button>
+					   <div id="form-success" style="display:none;margin-top:1rem;color:#f8ffae;font-weight:bold;"></div>
+				   </form>
+			   </div>
+		   </section>
+	   </main>
+	   <footer>
+           <div class="social-icons" aria-label="Social media links">
+               <a href="https://facebook.com/saahi.sbao" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+               <a href="https://instagram.com/saahi_sbao" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+               <a href="https://wa.me/254117448455" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+               <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+           </div>
+           &copy; 2025 صديق أبو بكر علي
+       </footer>
+    <button id="scrollTopBtn" aria-label="Scroll to top" style="display:none;position:fixed;bottom:2.5rem;right:2.5rem;z-index:200;background:#f8ffae;color:#23272e;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 2px 8px rgba(0,0,0,0.18);font-size:2rem;cursor:pointer;transition:background 0.2s, color 0.2s;">↑</button>
+    <script>
+      // Scroll-to-top button
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function() {
+        scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+      });
+      scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      // Contact form validation and success message
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        if (form) {
+          form.setAttribute('aria-label', 'Contact form');
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let valid = true;
+            const name = form.querySelector('#name');
+            const email = form.querySelector('#email');
+            const message = form.querySelector('#message');
+            if (!name.value.trim()) { name.setCustomValidity('Please enter your name.'); valid = false; } else { name.setCustomValidity(''); }
+            if (!email.value.trim() || !/^[^@]+@[^@]+\.[^@]+$/.test(email.value)) { email.setCustomValidity('Please enter a valid email.'); valid = false; } else { email.setCustomValidity(''); }
+            if (!message.value.trim()) { message.setCustomValidity('Please enter a message.'); valid = false; } else { message.setCustomValidity(''); }
+            if (!valid) { form.reportValidity(); return; }
+            // Show success message
+            let success = document.getElementById('form-success');
+            if (!success) {
+              success = document.createElement('div');
+              success.id = 'form-success';
+              success.style.marginTop = '1rem';
+              success.style.color = '#f8ffae';
+              success.style.fontWeight = 'bold';
+              form.appendChild(success);
+            }
+            success.textContent = 'Thank you! Your message has been sent.';
+            form.reset();
+          });
+        }
+      });
+      // Fade-in animation for sections
+      const fadeEls = document.querySelectorAll('main section');
+      function fadeInOnScroll() {
+        fadeEls.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 60) {
+            el.classList.add('fade-in');
+          }
+        });
+      }
+      window.addEventListener('scroll', fadeInOnScroll);
+      fadeInOnScroll();
+    </script>
+</body>
+</html>
